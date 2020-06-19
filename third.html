@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        //  3. Создать многомерный массив, размер массива получить от пользователя. Каждый нечётный подмассив заполнить значением 'odd', а чётный - 'even'. Размер каждого вложенного массива - 3.
+
+        var SomeMassive =  [];
+        var massiveLength = +prompt("input length of massive");  
+
+        if( !parseInt(massiveLength) ){
+            alert("Mistake! please, enter only number!");
+        }   
+        else{
+            SomeMassive.length = massiveLength;
+        }
+        for (var a = 0; a < SomeMassive.length; a++){
+            SomeMassive[a] = [];
+                        if (a % 2 == 0){
+                            SomeMassive[a][0] = "even";
+                            SomeMassive[a][1] = "even";
+                            SomeMassive[a][2] = "even";
+                        }
+                        else{
+                            SomeMassive[a][0] = "odd";
+                            SomeMassive[a][1] = "odd";
+                            SomeMassive[a][2] = "odd";
+                        }
+        }
+        console.log(SomeMassive);
+    </script>
+</head>
+<body>
+</body>
+</html>

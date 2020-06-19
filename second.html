@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+    //  2. Создать программу, выполняющую вставку элемента в массив после элемента, значение которого укажет пользователь.
+
+        var Animals = ["cat", "dog", "hamster", "giraffe", "zebra", "horse", "cow", "pig"];
+        var NewAnimals = prompt("Enter some animals");
+        var NumberAnimals = +prompt("Enter nomber");
+            if( !parseInt(NumberAnimals) ){
+                alert("Mistake! please, enter only number!");
+            }
+            else{
+                Animals.splice(NumberAnimals, 0,  NewAnimals);
+            }
+        console.log(Animals);
+
+    </script>
+</head>
+<body>
+</body>
+</html>

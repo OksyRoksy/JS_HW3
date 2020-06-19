@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+//    1. Сделать собственные примеры методов применяемых для массивов.
+
+        var Animals = ["cat", "dog", "hamster"];
+        console.log(Animals);
+
+        var AnimalsJoin = Animals.join("-"); //join - из массива делаем строку через дефис
+        console.log(AnimalsJoin);
+
+        var AnimalsSplit = AnimalsJoin.split("-"); // split - из строки преоброзовываем в массив
+        console.log(AnimalsSplit);
+
+        var AnimalsConcat = Animals.concat("horse", "cow", "pig") // concat - присоединяем новые элементы массива
+        console.log(AnimalsConcat);
+
+        var AnimalsReverse = Animals.reverse(); //reverse - меняем порядок
+        console.log(AnimalsReverse);
+
+        var AnimalsSlice = Animals.slice(0, 2); //slice выводим с 0 до 2 не включительно2, "cat" "dog" - закомментировать вышестоящие упражнения
+        console.log(AnimalsSlice);
+
+        var AnimalsSplice = Animals.splice(0, 1, "elephant", "mouse"); // splice удаляем от и до обозначенного элемента или вставляем с указанного места
+        console.log(AnimalsSplice);
+
+        var AnimalsSort = AnimalsConcat.sort(); // sort -сортируем по алфавиту массив к которому применяли concat
+        console.log(AnimalsSort);
+
+        var AnimalsPush = AnimalsConcat.push("giraffe", "zebra"); // push - добавляем необходимые элементы в  конец массива
+        console.log(AnimalsConcat);
+
+        var AnimalsPop = AnimalsConcat.pop(); // pop удаляем последний элемен из массива
+        console.log(AnimalsConcat);
+
+        var AnimalsShift = AnimalsConcat.shift(); // shift удаляем первое значение в массиве
+        console.log(AnimalsConcat);
+
+        var AnimalsUnshift = AnimalsConcat.unshift("lama", "hippo"); //unshift добавляем в начало массива укзанные фрагменты
+        console.log(AnimalsConcat);
+
+    </script>
+</head>
+<body>
+</body>
+</html>
